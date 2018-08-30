@@ -1,0 +1,27 @@
+{
+  "name": "jquery.jold.paginator",
+  "version": "1.0.0",
+  "description": "A jQuery pagination plugin for easy and quick pagination of items inside an element.",
+  "main": "gulpfile.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Jurgen Oldenburg",
+  "license": "BSD-3-Clause",
+  "homepage": "https://github.com/joldnl/jquery.jold.paginator",
+  "dependencies": {
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
+    "path": "^0.12.7"
+  }
+}

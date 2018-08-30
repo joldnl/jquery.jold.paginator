@@ -1,0 +1,69 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(85, 85, 85);
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+h1,h2,h3 {
+    color: rgb(0,0,0);
+}
+
+.items-container {
+    margin-top: 50px;
+    min-height: 160px;
+}
+
+.items-container .item {
+    padding: 0 0 10px 0;
+}
+
+.items-container .item span {
+    font-size: 11px;
+    color: rgb(189, 189, 189);
+}
+
+.pagination-indicator {
+    font-size: 12px;
+    color: rgb(189, 189, 189);
+}
+
+.pagination-container {
+    list-style: none;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.pagination-container .pagination__item {
+    margin: 0 10px 0 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.pagination-container .pagination__item .pagination__link {
+    display: block;
+    padding: 10px 15px;
+    background-color: rgba(85, 85, 85, .1);
+    color: rgb(218, 72, 39);
+    text-decoration: none;
+    border-radius: 27px;
+}
+
+.pagination-container .pagination__item--current .pagination__link {
+    color: rgb(255, 255, 255);
+    background-color: rgb(218, 72, 39);
+    font-weight: 700;
+}

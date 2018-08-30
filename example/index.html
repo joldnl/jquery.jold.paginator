@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>jquery.jold.paginator example</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="style.css" rel="stylesheet">
+        <script src="../jquery.jold.paginator.min.js"></script>
+    </head>
+    <body>
+
+        <div class="container">
+
+            <h1>JOLD Paginator example:</h1>
+            <p>A usage example of the paginator plugin. See the sourcecode for more details.</p>
+
+            <div class="items-container">
+                <h3>Paginated items:</h3>
+                <div class="item item-visible">item 1</div>
+                <div class="item item-visible item-toggleable">item 1 b <span>(toggleable)</span></div>
+                <div class="item item-visible">item 2</div>
+                <div class="item item-visible">item 3</div>
+                <div class="item item-visible">item 4</div>
+                <div class="item item-visible item-toggleable">item 4 b <span>(toggleable)</span></div>
+                <div class="item item-visible item-toggleable">item 4 c <span>(toggleable)</span></div>
+                <div class="item item-visible item-toggleable">item 4 d <span>(toggleable)</span></div>
+                <div class="item item-visible">item 5</div>
+                <div class="item item-visible">item 6</div>
+                <div class="item item-visible item-toggleable">item 6 b <span>(toggleable)</span></div>
+                <div class="item item-visible">item 7</div>
+                <div class="item item-visible">item 8</div>
+                <div class="item item-visible item-toggleable">item 8 b <span>(toggleable)</span></div>
+                <div class="item item-visible item-toggleable">item 8 c <span>(toggleable)</span></div>
+                <div class="item item-visible item-toggleable">item 8 d <span>(toggleable)</span></div>
+                <div class="item item-visible item-toggleable">item 8 e <span>(toggleable)</span></div>
+                <div class="item item-visible">item 9</div>
+                <div class="item item-visible">item 10</div>
+                <div class="item item-visible item-toggleable">item 10 b <span>(toggleable)</span></div>
+            </div>
+
+                <div class="pagination-indicator"></div>
+            <ul class="pagination-container"></ul>
+
+            <div class="toggle-container">
+                <label for="toggle-items" class="report-switch">
+                    <input type="checkbox" name="toggle-items" id="toggle-items" value="true" checked="checked" class="js-toggle-items">
+                    Show toggleable  items
+                </label>
+            </div>
+
+
+        </div>
+
+        <script>
+            (function($){
+
+                // Initiate the paginator on the .items-container element.
+                var paginator = new $('.items-container').joldPaginator({
+                    'perPage': 5,
+                    'items': '.item',
+                    'paginator': '.pagination-container',
+                    'indicator': {
+                        'selector': '.pagination-indicator',
+                        'text': 'Showing item {start}-{end} of {total}',
+                    }
+                });
+
+
+                // Toggle items
+                $('body').on('change', '.js-toggle-items', function(e) {
+
+        			e.preventDefault();
+
+                    var checked = this.checked;
+
+                    $('.items-container').find('.item')
+                        .removeClass('item-hidden')
+                        .addClass('item-visible');
+
+                    // Include historical reports (invalid)
+                    if ( checked == true ) {
+                        $('.items-container').find('.item-toggleable')
+                            .removeClass('item-hidden')
+                            .addClass('item-visible');
+                    }
+
+                    // Exclude historical reports (invalid)
+                    if ( checked == false ) {
+                        $('.items-container').find('.item-toggleable')
+                            .removeClass('item-visible')
+                            .addClass('item-hidden');
+                    }
+
+                    // Reset the paginator
+                    paginator.init();
+
+        		});
+
+            })(jQuery);
+        </script>
+
+    </body>
+
+</html>
