@@ -1,6 +1,6 @@
 # jQuery JOLD Paginator
 
-Version 1.0.1
+Version 1.0.2
 
 ## Summary
 
@@ -100,6 +100,11 @@ Tested with jQuery 1.12.1.
 
 
 ## Changelog
+
+
+#### Version 1.0.2
+
+* Update readme documentation
 
 
 #### Version 1.0.1
