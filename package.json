@@ -1,6 +1,6 @@
 {
   "name": "jquery.jold.paginator",
-  "version": "1.0.3",
+  "version": "1.0.3.1",
   "description": "A jQuery pagination plugin for easy and quick pagination of items inside an element.",
   "main": "gulpfile.js",
   "devDependencies": {},

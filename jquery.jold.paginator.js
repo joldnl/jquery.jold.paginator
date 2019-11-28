@@ -1,5 +1,5 @@
 /*!
- * Jold jQuery Paginator 1.0.3
+ * Jold jQuery Paginator 1.0.3.1
  *
  * Copyright (c) 2018 Jold Interactive; Jurgen Oldenburg <info@jold.nl>
  *
