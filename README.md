@@ -17,14 +17,14 @@ $ npm i jquery.jold.paginator --save
 
 ```
 
-After installing the plugin with npm, you still need to include the downloaded files from node_modules into your workflow. The path would be something like `node_modules/jquery.jold.js-load-video/jquery.jold.js-load-video.min.js`.
+After installing the plugin with npm, you still need to include the downloaded files from node_modules into your workflow. The path would be something like `node_modules/jquery.jold.paginator/jquery.jold.paginator.min.js`.
 
 
 ### Include script from cdn:
 
 ```html
 <!-- Include js from jsdelivr cdn -->
-<script src="https://cdn.jsdelivr.net/npm/jquery.jold.js-load-video/jquery.jold.js-load-video.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.jold.paginator/jquery.jold.paginator.min.js"></script>
 
 ```
 
