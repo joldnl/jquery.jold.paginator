@@ -1,6 +1,6 @@
 # jQuery JOLD Paginator
 
-Version 1.0.0
+Version 1.0.1
 
 ## Summary
 
@@ -81,6 +81,14 @@ Tested with jQuery 1.12.1.
 
 
 ## Changelog
+
+
+#### Version 1.0.1
+
+* Fix npm vulnerabilities
+* Update gulp workflow for Gulp v4.
+* Cleanup gulp workflow
+* Update all npm packages
 
 
 #### Version 1.0
