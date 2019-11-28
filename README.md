@@ -14,7 +14,6 @@ Install the plugin with npm and include it in your build process, or directly in
 
 ```bash
 $ npm i jquery.jold.paginator --save
-
 ```
 
 After installing the plugin with npm, you still need to include the downloaded files from node_modules into your workflow. The path would be something like `node_modules/jquery.jold.paginator/jquery.jold.paginator.min.js`.
@@ -25,7 +24,6 @@ After installing the plugin with npm, you still need to include the downloaded f
 ```html
 <!-- Include js from jsdelivr cdn -->
 <script src="https://cdn.jsdelivr.net/npm/jquery.jold.paginator/jquery.jold.paginator.min.js"></script>
-
 ```
 
 Load the plugin from jsdeliver CDN
