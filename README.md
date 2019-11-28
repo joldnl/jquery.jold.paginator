@@ -6,14 +6,33 @@ Version 1.0.1
 
 A jQuery pagination plugin for easy and quick pagination of items inside an element.
 
-## Author
 
-Jurgen Oldenburg ( [@staxxnl](http://twitter.com/staxxnl) / [jold.nl](https://www.jold.nl) / [info@jold.nl](mailto:info@jold.nl) )
+## Installation:
+Install the plugin with npm and include it in your build process, or directly include the files in the head of your page.
 
-## Usage
+### Install with npm (recommended):
 
-Include `jquery.joldPaginator.min.js` after calling jQuery in the footer. Alternatively, include in your `plugins.js` file if using [HTML5 Boilerplate](http://html5boilerplate.com).
+```bash
+$ npm i jquery.jold.paginator --save
 
+```
+
+After installing the plugin with npm, you still need to include the downloaded files from node_modules into your workflow. The path would be something like `node_modules/jquery.jold.js-load-video/jquery.jold.js-load-video.min.js`.
+
+
+### Include script from cdn:
+
+```html
+<!-- Include js from jsdelivr cdn -->
+<script src="https://cdn.jsdelivr.net/npm/jquery.jold.js-load-video/jquery.jold.js-load-video.min.js"></script>
+
+```
+
+Load the plugin from jsdeliver CDN
+
+
+
+## Using the plugin
 
 ### Create a list of paginatable items
 
@@ -94,3 +113,8 @@ Tested with jQuery 1.12.1.
 #### Version 1.0
 
 * Initial commit.
+
+
+## Author
+
+Jurgen Oldenburg ( [@staxxnl](http://twitter.com/staxxnl) / [jold.nl](https://www.jold.nl) / [info@jold.nl](mailto:info@jold.nl) )
