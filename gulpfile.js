@@ -26,21 +26,12 @@ var options = {
         url             : "https://github.com/joldnl/jquery.jold.paginator",
     },
 
-
-    // ----- Default task options ----- //
-    default : {
-        tasks : [ 'build' ]
-    },
-
-
     // ----- Build task options ----- //
     build : {
-        tasks       : [ 'process:js' ],
         destination : {
             js  : './',
         }
     },
-
 
     // ----- JavaScript task options ----- //
     js : {
@@ -63,7 +54,7 @@ var options = {
 
         run : function() {
             return [
-                [ 'process:js' ],
+                [ 'default' ],
             ]
         }
 
@@ -74,40 +65,10 @@ var options = {
 
 
 // -------------------------------------
-//   Task: Default
-// -------------------------------------
-
-gulp.task( 'default', function() {
-
-    options.build.tasks.forEach( function( task ) {
-        gulp.start( task );
-    });
-
-});
-
-
-
-
-// -------------------------------------
-//   Task: Build
-// -------------------------------------
-
-gulp.task( 'build', function() {
-
-    options.build.tasks.forEach( function( task ) {
-        gulp.start( task );
-    });
-
-});
-
-
-
-
-// -------------------------------------
 //   Task: Process Javascript
 // -------------------------------------
 
-gulp.task( 'process:js', function () {
+gulp.task( 'default', function () {
 
     return gulp.src( options.js.includes )
         .pipe( plumber() )                                      // Prevent pipe breaking from errors
@@ -129,7 +90,7 @@ gulp.task( 'watch', function() {
     var watchFiles = options.watch.files();
 
     watchFiles.forEach( function( files, index ) {
-        gulp.watch( files, options.watch.run()[ index ]  );
+        gulp.watch( files, gulp.series(options.watch.run()[ index ])  );
     });
 
 });
