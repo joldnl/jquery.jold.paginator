@@ -102,6 +102,11 @@ Tested with jQuery 1.12.1.
 ## Changelog
 
 
+#### Version 1.0.3
+
+* Fix incurrect plugin path in documentation
+
+
 #### Version 1.0.2
 
 * Update readme documentation
